@@ -161,7 +161,10 @@ public:
     }
 
 private:
-    registry_t<Mutex>() = default;
+    registry_t<Mutex>()
+    {
+
+    }
 
     void throw_if_exists_(const std::string &logger_name)
     {
